@@ -46,7 +46,7 @@ const projectList = [
     title: "My Resume Site",
     description:
       "Developed and deployed a personal portfolio using HTML and CSS, highlighting my design abilities and professional experience.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+    url: "https://shubhamkrkeshri21.github.io/shubham_Resume/",
   },
   {
     title: "Airlines-Reservation-System",
