@@ -18,6 +18,7 @@ import linkedInIcon from "../images/socials/linkedin.svg";
 import mediumIcon from "../images/socials/medium.svg";
 import twitterIcon from "../images/socials/twitter.svg";
 import youTubeIcon from "../images/socials/youtube.svg";
+import CodeChef from "../images/socials/codechef.jpg";
 
 /**
  * 💡 Learning resources
@@ -38,6 +39,7 @@ const Footer = (props) => {
     primaryColor,
     twitter,
     youTube,
+    CodeChef ,
   } = props;
 
   return (
@@ -110,6 +112,15 @@ const Footer = (props) => {
             rel="noopener noreferrer"
           >
             <img src={youTubeIcon} alt="YouTube" className="socialIcon" />
+          </a>
+        )}
+        {CodeChef && (
+          <a
+            href={`https://www.codechef.com/users/shubham2101`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={CodeChef} alt="YouTube" className="CodeChef" />
           </a>
         )}
       </div>
