@@ -18,14 +18,7 @@ import linkedInIcon from "../images/socials/linkedin.svg";
 import mediumIcon from "../images/socials/medium.svg";
 import twitterIcon from "../images/socials/twitter.svg";
 import youTubeIcon from "../images/socials/youtube.svg";
-import CodeChef from "../images/socials/codechef.jpg";
-
-/**
- * 💡 Learning resources
- *
- *  HTML hyperlinks: https://www.w3schools.com/html/html_links.asp
- *  Opening links in new tabs: https://www.freecodecamp.org/news/how-to-use-html-to-open-link-in-new-tab/
- */
+import codeChefIcon from "../images/socials/codechef.jpg";
 
 const Footer = (props) => {
   const {
@@ -39,7 +32,7 @@ const Footer = (props) => {
     primaryColor,
     twitter,
     youTube,
-    CodeChef ,
+    codeChef,
   } = props;
 
   return (
@@ -64,7 +57,7 @@ const Footer = (props) => {
       >
         {email && (
           <a href={`mailto:${email}`}>
-            <img src={envelopeIcon} alt="email" className="socialIcon" />
+            <img src={envelopeIcon} alt="Email" className="socialIcon" />
           </a>
         )}
         {devDotTo && (
@@ -73,7 +66,7 @@ const Footer = (props) => {
           </a>
         )}
         {gitHub && (
-          <a href="https://github.com/Shubhamkrkeshri21" target="_blank" rel="noopener noreferrer">
+          <a href={`https://github.com/${gitHub}`} target="_blank" rel="noopener noreferrer">
             <img src={gitHubIcon} alt="GitHub" className="socialIcon" />
           </a>
         )}
@@ -88,7 +81,7 @@ const Footer = (props) => {
         )}
         {linkedIn && (
           <a
-            href={`https://www.linkedin.com/in/shubham-kr-keshri-b812b02a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'${linkedIn}`}
+            href={`https://www.linkedin.com/in/${linkedIn}`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -101,7 +94,7 @@ const Footer = (props) => {
           </a>
         )}
         {twitter && (
-          <a href={`https://x.com/ShubhamKr2109?t=HiSXckLXbPy6TeAh4hpT6w&s=09/${twitter}`} target="_blank" rel="noopener noreferrer">
+          <a href={`https://x.com/${twitter}`} target="_blank" rel="noopener noreferrer">
             <img src={twitterIcon} alt="Twitter" className="socialIcon" />
           </a>
         )}
@@ -114,13 +107,13 @@ const Footer = (props) => {
             <img src={youTubeIcon} alt="YouTube" className="socialIcon" />
           </a>
         )}
-        {CodeChef && (
+        {codeChef && (
           <a
-            href={`https://www.codechef.com/users/shubham2101`}
+            href={`https://www.codechef.com/users/${codeChef}`}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={CodeChef} alt="YouTube" className="CodeChef" />
+            <img src={codeChefIcon} alt="CodeChef" className="socialIcon" />
           </a>
         )}
       </div>
@@ -146,7 +139,7 @@ Footer.propTypes = {
   primaryColor: PropTypes.string,
   twitter: PropTypes.string,
   youTube: PropTypes.string,
-
+  codeChef: PropTypes.string, // Added codeChef to propTypes
 };
 
 export default Footer;
